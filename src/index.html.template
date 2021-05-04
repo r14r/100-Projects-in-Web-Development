@@ -3,28 +3,30 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--
-			<link href="./assets/vendor/bootstrap/5.0.0/css/bootstrap.css" rel="stylesheet" />
-		-->
-		<link rel="stylesheet" href="./index.css" />
+		
+		<link href="/assets/vendor/bootstrap/5.0.0/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./index.css" />
 
-		<title>100 Days of Web Development</title>
+		<title>Web Development | Learn - Practice - Play</title>
 	</head>
 	<body>
-		<main>
-			<section class="py-5 text-center container">
-				<div class="row py-lg-5">
-					<div class="col-lg-6 col-md-8 mx-auto">
-						<h1 class="fw-light">100 Days of Web Development</h1>
-						<p class="lead text-muted"></p>
-					</div>
-				</div>
-			</section>
+        <div class="container">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title">&nbsp;</h1>
+                </div>
 
-			<div class="album py-5 bg-light">
-				<div class="container">###CONTENT###</div>
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-default filter-button" data-filter="beginner">Beginner</button>
+                    <button class="btn btn-default filter-button" data-filter="immediate">Immediate</button>
+                    <button class="btn btn-default filter-button" data-filter="advanced">Advanced</button>
+                </div>
+                <br />
+
+			###CONTENT###
 			</div>
-		</main>
+		</div>
 
 		<script src="./assets/vendor/bootstrap/5.0.0/js/bootstrap.min.js"></script>
 		<script src="./assets/vendor/jquery/3.6.0/js/jquery.js"></script>

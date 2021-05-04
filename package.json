@@ -1,26 +1,27 @@
 {
-	"name": "100-days",
-	"version": "1.0.0",
-	"main": "./build/index.js",
-	"repository": "https://github.com/ivanvb/100-days-front-end.git",
-	"author": "ivanvb <ivanvalette@hotmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"generateIndex": "node ./build/index.js",
-		"parcel": "parcel build ./src/index.build.html --public-url ../.. --no-source-maps --no-minify",
-		"build": "yarn generateIndex && yarn parcel",
-		"postbuild": "node ./build/postbuild.js",
-		"server": "python -m http.server --directory dist"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.10.3",
-		"@babel/plugin-transform-runtime": "^7.10.3",
-		"@babel/preset-env": "^7.10.3",
-		"autoprefixer": "^9.8.4",
-		"parcel-bundler": "^1.12.4",
-		"sass": "^1.32.11"
-	},
-	"dependencies": {
-		"@babel/runtime": "^7.10.3"
-	}
+    "name": "100-days",
+    "version": "1.0.0",
+    "main": "./build/index.js",
+    "repository": "https://github.com/ivanvb/100-days-front-end.git",
+    "author": "ivanvb <ivanvalette@hotmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "generate": "yarn generateIndex",
+        "generateIndex": "node ./build/index.js",
+        "parcel": "parcel build ./src/index.build.html --public-url ../.. --no-source-maps --no-minify",
+        "buildX": "yarn generateIndex && yarn parcel",
+        "postbuild": "node ./build/postbuild.js",
+        "server": "python -m http.server --directory dist"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.3",
+        "@babel/plugin-transform-runtime": "^7.10.3",
+        "@babel/preset-env": "^7.10.3",
+        "autoprefixer": "^9.8.4",
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.32.11"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.10.3"
+    }
 }

@@ -14,68 +14,62 @@ const ProjectsMetadata = [];
  *
  */
 var getProjects = function (pattern, callback) {
-	glob(pattern, callback);
+    glob(pattern, callback);
 };
 
 /**
  *
  */
 function collectData(projects) {
-	projects.forEach((directory) => {
-		const file = directory.replace('./src/', '').replace('\\', '/');
-		const path = file.replace('/index.html', '');
+    projects.forEach((directory) => {
+        const file = directory.replace('./src/', '').replace('\\', '/');
+        const path = file.replace('/index.html', '');
 
-		const parts = path.split('/');
-		const html = fs.readFileSync(directory, 'utf8');
-		const [title] = /(?<=<title>).*(?=<\/title>)/.exec(html);
-		const hasJs = /<script.*>.*<\/script>/.exec(html);
+        const parts = path.split('/');
+        const html = fs.readFileSync(directory, 'utf8');
+        const [title] = /(?<=<title>).*(?=<\/title>)/.exec(html);
+        const hasJs = /<script.*>.*<\/script>/.exec(html);
 
-		let img = directory.replace('/index.html', '/screenshot.png');
+        let img = directory.replace('/index.html', '/screenshot.png');
 
-		if (!fs.existsSync(img) === true) {
-			img = 'assets/lib/img/screenshot.png';
-		} else {
-			img = img.replace('./src/', '');
-		}
+        if (!fs.existsSync(img) === true) {
+            img = 'assets/lib/img/screenshot.png';
+        } else {
+            img = img.replace('./src/', '');
+        }
 
-		let level = parts[2];
+        let level = parts[2];
 
-		if (level === '1') {
-			level = 'Beginner';
-		} else if (level === '2') {
-			level = 'Immediate';
-		} else if (level === '3') {
-			level = 'Advanced';
-		}
+        if (level === '1') {
+            level = 'beginner';
+        } else if (level === '2') {
+            level = 'immediate';
+        } else if (level === '3') {
+            level = 'advanced';
+        }
 
-		ProjectsMetadata.push({
-			title,
-			challenge: parts[1].trim(),
-			desc: path,
-			path: path,
-			img: img,
-			href: file,
-			level: level,
-		});
-	});
+        ProjectsMetadata.push({
+            title,
+            challenge: parts[1].trim(),
+            desc: path,
+            path: path,
+            img: img,
+            href: file,
+            level: level,
+        });
+    });
 }
 
 /**
  * Using Style from https://codepen.io/Booligoosh/pen/mKPpQp
  */
 function createIndexFile() {
-	const projectsHTML = ProjectsMetadata.map((project) => {
-		const content = `
-			<div class="card">
+    const projectsHTML = ProjectsMetadata.map((project) => {
+        const content = `
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ${project.level}">
 				<a href="${project.path}/index.html">
-					<div class="card-img" style="background-image:url(${project.img});">
-						<div class="overlay">
-							<div class="overlay-content">
-								View Project
-							</div>
-						</div>
-					</div>
-		
+					<img src="${project.img}" class="img-responsive" />
+
 					<div class="card-content">
 						<h2>${project.title}</h2>
 						<p>${project.challenge} / ${project.level}</p>
@@ -84,27 +78,27 @@ function createIndexFile() {
 			</div>
 		`;
 
-		return content;
-	});
+        return content;
+    });
 
-	let htmlIndex = fs.readFileSync(path.resolve(__dirname, '../src/index.html.template'), 'utf8');
-	htmlIndex = htmlIndex.replace('###CONTENT###', (match) => {
-		return `<div class="cards">${projectsHTML.join('')}</div>`;
-	});
+    let htmlIndex = fs.readFileSync(path.resolve(__dirname, '../src/index.html.template'), 'utf8');
+    htmlIndex = htmlIndex.replace('###CONTENT###', (match) => {
+        return `${projectsHTML.join('')}`;
+    });
 
-	fs.writeFileSync(path.resolve(__dirname, '../src/index.html'), htmlIndex, 'utf8');
+    fs.writeFileSync(path.resolve(__dirname, '../src/index.html'), htmlIndex, 'utf8');
 }
 
 /**
  *
  */
 (function main() {
-	getProjects(BASE_PATH + '/**/index.html', function (err, res) {
-		if (err) {
-			console.log('Error', err);
-		} else {
-			collectData(res);
-			createIndexFile();
-		}
-	});
+    getProjects(BASE_PATH + '/**/index.html', function (err, res) {
+        if (err) {
+            console.log('Error', err);
+        } else {
+            collectData(res);
+            createIndexFile();
+        }
+    });
 })();

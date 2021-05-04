@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modern Art Generator 🖼</title>
+        <link href="./reset.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Modern Art Generator</h1>
+            <h2>Just for 250,000 USD$</h2>
+            <canvas id="picture" width="350" height="350"></canvas>
+            <div class="buttons">
+                <button id="stop">Pause</button>
+                <button id="save">Save</button>
+                <button onclick="location.reload()">New</button>
+            </div>
+            <a id="link" style="display: none;"></a>
+        </div>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>

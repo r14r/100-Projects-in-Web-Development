@@ -44,7 +44,7 @@ function collectData(projects) {
 		})(parts[2].trim().toLowerCase());
 
 		const challenge = parts[1].trim().toLowerCase();
-		const desc = parts[2].trim() + '/' + parts[3].trim();
+		const desc = parts[2].trim() + '/' + parts[3]?.trim();
 
 		ProjectsMetadata.push({
 			title,

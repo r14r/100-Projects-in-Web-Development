@@ -1,3 +1,7 @@
+:root {
+	--default-color-arrow: #242222;
+}
+
 .container {
 	min-height: 75rem;
 	padding-top: 4rem !important;
@@ -65,4 +69,34 @@ a {
 	box-shadow: 0 0 0 3px #57dd43, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
 	background: #57dd43;
 	text-align: center;
+}
+
+/**/
+.arrow-page {
+	float: right;
+}
+.arrow {
+	position: fixed;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	border: 1px solid var(--default-color-arrow-up);
+	bottom: 1rem;
+	right: 0.5rem;
+}
+.arrow path {
+	fill: var(--default-color-arrow-up);
+}
+.arrow svg {
+	width: 100%;
+	padding: 10px;
+}
+.arrow:hover {
+	border: 0;
+	background: var(--default-color-arrow-up);
+	box-shadow: 0px 0px 10px 0px var(--default-color-arrow-up);
+	transform: scale(1.2);
+}
+.arrow:hover path {
+	fill: #11ff11;
 }

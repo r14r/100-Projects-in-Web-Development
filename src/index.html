@@ -13,15 +13,15 @@
 			crossorigin="anonymous"
 		/>
 
-		<link href="/assets/vendor/bootstrap/5.0.0/css/bootstrap.css" rel="stylesheet" />
-		<link rel="stylesheet" href="./index.css" />
+		<link href="assets/vendor/bootstrap/5.0.0/css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="index.css" />
 
 		<title>Web Development | Learn - Practice - Play</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><img class="img-favicon" src="assets/lib/img/favicon-white.png" /></a>
+				<a class="navbar-brand" href="/blog"><img class="img-favicon" src="assets/lib/img/favicon-white.png" /></a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -36,17 +36,22 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav me-auto mb-2 mb-md-0">
 						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="all">All</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="beginner">Beginner</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="immediate">Immediate</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="advanced">Advanced</a></li>
-						&nbsp;|&nbsp;
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="css">CSS</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="javascript">Javascript</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="frontend">Frontend</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="codepen">Codepen</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="coding">Coding</a></li>
-						<li class="nav-item"><a class="nav-link filter-button" href="#" data-filter="projects">Projects</a></li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Filter</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown01">
+								<li><a class="dropdown-item filter-button" href="#" data-filter="all">All</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="beginner">Beginner</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="immediate">Immediate</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="advanced">Advanced</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="css">CSS</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="javascript">Javascript</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="frontend">Frontend</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="codepen">Codepen</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="coding">Coding</a></li>
+								<li><a class="dropdown-item filter-button" href="#" data-filter="projects">Projects</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -855,18 +860,530 @@
 				</div>
 			</div>
       
-            <div class="project col-md-6 filter filter-css filter-tailwindcss">
+            <div class="project col-md-6 filter filter-css filter-immediate">
 				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
 					<div class="card-body d-flex flex-column align-items-start">
-						<strong class="d-inline-block mb-2 text-primary">TailwindCSS Image Gallery Grid</strong>
+						<strong class="d-inline-block mb-2 text-primary">001 - Title</strong>
 						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
-						TailwindCSS/image_gallery_grid
-						<div class="mb-1 text-muted small level">tailwindcss</div>
+						2/001
+						<div class="mb-1 text-muted small level">immediate</div>
 						<p class="card-text mb-auto">&nbsp;</p>
-						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/TailwindCSS/image_gallery_grid">Read more ... </a>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/001">Read more ... </a>
 					</div>
-					<a href="projects/css/TailwindCSS/image_gallery_grid">
-						<img class="card-img-right flex-auto d-none d-lg-block" alt="TailwindCSS Image Gallery Grid" src="assets/lib/img/screenshot.png">
+					<a href="projects/css/2/001">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="001 - Title" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">002 - Menu Icon</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/002
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/002">Read more ... </a>
+					</div>
+					<a href="projects/css/2/002">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="002 - Menu Icon" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">003 - The Pyramid</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/003
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/003">Read more ... </a>
+					</div>
+					<a href="projects/css/2/003">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="003 - The Pyramid" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">004 - Loading Icon</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/004
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/004">Read more ... </a>
+					</div>
+					<a href="projects/css/2/004">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="004 - Loading Icon" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">005 - ER-QR Statistics</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/005
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/005">Read more ... </a>
+					</div>
+					<a href="projects/css/2/005">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="005 - ER-QR Statistics" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">006 - ER-QR Profile Card</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/006
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/006">Read more ... </a>
+					</div>
+					<a href="projects/css/2/006">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="006 - ER-QR Profile Card" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">007 - Notifications, Search & Menu</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/007
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/007">Read more ... </a>
+					</div>
+					<a href="projects/css/2/007">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="007 - Notifications, Search & Menu" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">008 - Bubbles</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/008
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/008">Read more ... </a>
+					</div>
+					<a href="projects/css/2/008">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="008 - Bubbles" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">009 - Weather</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/009
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/009">Read more ... </a>
+					</div>
+					<a href="projects/css/2/009">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="009 - Weather" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">010 - Health Watch</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/010
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/010">Read more ... </a>
+					</div>
+					<a href="projects/css/2/010">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="010 - Health Watch" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">011 - These Converse Were Made For Walking</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/011
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/011">Read more ... </a>
+					</div>
+					<a href="projects/css/2/011">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="011 - These Converse Were Made For Walking" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">012 - Tooltip</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/012
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/012">Read more ... </a>
+					</div>
+					<a href="projects/css/2/012">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="012 - Tooltip" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">013 - Pony User Gallery</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/013
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/013">Read more ... </a>
+					</div>
+					<a href="projects/css/2/013">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="013 - Pony User Gallery" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">014 - Bicyclopter</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/014
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/014">Read more ... </a>
+					</div>
+					<a href="projects/css/2/014">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="014 - Bicyclopter" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">015 - Upload</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/015
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/015">Read more ... </a>
+					</div>
+					<a href="projects/css/2/015">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="015 - Upload" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">016 - ShapeShifter</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/016
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/016">Read more ... </a>
+					</div>
+					<a href="projects/css/2/016">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="016 - ShapeShifter" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">017 - Penrose Triangle</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/017
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/017">Read more ... </a>
+					</div>
+					<a href="projects/css/2/017">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="017 - Penrose Triangle" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">018 - Elastic</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/018
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/018">Read more ... </a>
+					</div>
+					<a href="projects/css/2/018">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="018 - Elastic" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">019 - Slider with Radio Buttons</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/019
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/019">Read more ... </a>
+					</div>
+					<a href="projects/css/2/019">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="019 - Slider with Radio Buttons" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">020 - Send Mail Icon</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/020
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/020">Read more ... </a>
+					</div>
+					<a href="projects/css/2/020">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="020 - Send Mail Icon" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">021 - Pac-Man</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/021
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/021">Read more ... </a>
+					</div>
+					<a href="projects/css/2/021">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="021 - Pac-Man" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">022 - Fitness Tracker</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/022
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/022">Read more ... </a>
+					</div>
+					<a href="projects/css/2/022">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="022 - Fitness Tracker" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">023 - Animated Typography</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/023
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/023">Read more ... </a>
+					</div>
+					<a href="projects/css/2/023">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="023 - Animated Typography" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">024 - Button</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/024
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/024">Read more ... </a>
+					</div>
+					<a href="projects/css/2/024">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="024 - Button" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">025 - Map Marker</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/025
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/025">Read more ... </a>
+					</div>
+					<a href="projects/css/2/025">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="025 - Map Marker" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">026 - Line on the Wind</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/026
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/026">Read more ... </a>
+					</div>
+					<a href="projects/css/2/026">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="026 - Line on the Wind" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">027 Modal Window</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/027
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/027">Read more ... </a>
+					</div>
+					<a href="projects/css/2/027">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="027 Modal Window" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">028 - Checklist</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/028
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/028">Read more ... </a>
+					</div>
+					<a href="projects/css/2/028">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="028 - Checklist" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">029 - Ring Ring</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/029
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/029">Read more ... </a>
+					</div>
+					<a href="projects/css/2/029">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="029 - Ring Ring" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">030 Search Field</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/030
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/030">Read more ... </a>
+					</div>
+					<a href="projects/css/2/030">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="030 Search Field" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">031 - Pendulum Wave</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/031
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/031">Read more ... </a>
+					</div>
+					<a href="projects/css/2/031">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="031 - Pendulum Wave" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">032 - Counter</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/032
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2/032">Read more ... </a>
+					</div>
+					<a href="projects/css/2/032">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="032 - Counter" src="assets/lib/img/screenshot.png">
+					</a>
+				</div>
+			</div>
+      
+            <div class="project col-md-6 filter filter-css filter-immediate">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">Android Logo</strong>
+						<h6 class="mb-0"><a class="text-dark" href="#">css</a></h6>
+						2/undefined
+						<div class="mb-1 text-muted small level">immediate</div>
+						<p class="card-text mb-auto">&nbsp;</p>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="projects/css/2">Read more ... </a>
+					</div>
+					<a href="projects/css/2">
+						<img class="card-img-right flex-auto d-none d-lg-block" alt="Android Logo" src="assets/lib/img/screenshot.png">
 					</a>
 				</div>
 			</div>
@@ -3303,6 +3820,36 @@
 				</div>
 			</div>
       </div>
+
+			<div class="arrow-page">
+				<a class="arrow" href="#">
+					<svg
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px"
+						y="0px"
+						viewBox="0 0 490.544 490.544"
+						style="enable-background: new 0 0 490.544 490.544"
+						xml:space="preserve"
+					>
+						<path
+							style="fill: #607d8b"
+							d="M18.098,274.151L245.213,47.015l227.115,227.136c4.237,4.093,10.99,3.975,15.083-0.262 c3.993-4.134,3.993-10.687,0-14.821L252.744,24.401c-4.165-4.164-10.917-4.164-15.083,0L2.994,259.068 c-4.093,4.237-3.975,10.99,0.262,15.083c4.134,3.992,10.687,3.992,14.82,0H18.098z"
+						/>
+						<path
+							style="fill: #607d8b"
+							d="M252.765,216.38c-4.165-4.164-10.917-4.164-15.083,0L3.016,451.047 c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136 c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L252.765,216.38z"
+						/>
+						<path
+							d="M479.88,277.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.213,47.015L18.098,274.151 c-4.237,4.093-10.99,3.975-15.083-0.262c-3.992-4.134-3.992-10.687,0-14.82L237.682,24.401c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.409,276.146,482.702,277.265,479.88,277.266z"
+						/>
+						<path
+							d="M479.88,469.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.213,239.015L18.098,466.151 c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.409,468.146,482.702,469.265,479.88,469.266z"
+						/>
+					</svg>
+				</a>
+			</div>
 		</div>
 
 		<script src="./assets/vendor/bootstrap/5.0.0/js/bootstrap.min.js"></script>

@@ -46,11 +46,14 @@ function collectData(projects) {
 		const challenge = parts[1].trim().toLowerCase();
 		const desc = parts[2].trim() + '/' + parts[3]?.trim();
 
+		// https://github.com/r14r/Web-Development_Learn-Practice-Play/tree/main/src/projects/CSS/2/003
+
 		ProjectsMetadata.push({
 			title,
 			challenge: challenge,
 			desc: desc,
 			path: path,
+			github: 'https://github.com/r14r/Web-Development_Learn-Practice-Play/tree/main/src/' + path,
 			img: img,
 			href: file,
 			level: level,
@@ -73,6 +76,8 @@ function createIndexFile() {
 						<div class="mb-1 text-muted small level">${project.level}</div>
 						<p class="card-text mb-auto">&nbsp;</p>
 						<a class="btn btn-outline-primary btn-sm" role="button" href="${project.path}">Read more ... </a>
+						<a class="btn btn-outline-primary btn-sm" role="button" href="${project.github}">Source ... </a>
+						
 					</div>
 					<a href="${project.path}">
 						<img class="card-img-right flex-auto d-none d-lg-block" alt="${project.title}" src="${project.img}">

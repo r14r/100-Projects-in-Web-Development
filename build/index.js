@@ -75,9 +75,8 @@ function createIndexFile() {
 						${project.desc}
 						<div class="mb-1 text-muted small level">${project.level}</div>
 						<p class="card-text mb-auto">&nbsp;</p>
-						<a class="btn btn-outline-primary btn-sm" role="button" href="${project.path}">Read more ... </a>
-						<a class="btn btn-outline-primary btn-sm" role="button" href="${project.github}">Source ... </a>
-						
+						<a class="btn" href="${project.path}">Show &#x2192;</a>
+						<a class="btn" href="${project.github}" target="_blank">Code &#x2192;</a>
 					</div>
 					<a href="${project.path}">
 						<img class="card-img-right flex-auto d-none d-lg-block" alt="${project.title}" src="${project.img}">
